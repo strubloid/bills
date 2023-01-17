@@ -15,16 +15,24 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatDatepickerModule } from '@angular/material/datepicker'
 
+// routes
+import { AppRoutingModule } from 'src/components/app/app-routing.module'
+import { BillsRoutingModule } from 'src/components/bills/bills-routing.module'
+
 // Components
 import { AppComponent } from './app.component'
-import { AppRoutingModule } from 'src/components/app/app-routing.module'
 import { BillsComponent } from 'src/components/bills/bills.component'
+import { BillsListComponent } from 'src/components/bills/list/bills.list.component'
+import { HeaderComponent } from 'src/components/header/header.component'
+
 
 
 @NgModule({
     declarations: [
         AppComponent,
-        BillsComponent
+        HeaderComponent,
+        BillsComponent,
+        BillsListComponent
     ],
     imports: [
         MatCardModule,
@@ -37,6 +45,7 @@ import { BillsComponent } from 'src/components/bills/bills.component'
         MatDatepickerModule,
         MatNativeDateModule,
         AppRoutingModule,
+        BillsRoutingModule,
         BrowserModule,
         FormsModule,
         BrowserAnimationsModule,

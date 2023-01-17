@@ -1,0 +1,13 @@
+// Import of the main starter
+@import "src/starter";
+
+// basic global html rules
+html, body {
+    height: 100%; background-color: #fafafa;
+}
+
+// global body rules
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+

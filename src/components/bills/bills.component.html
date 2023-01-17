@@ -1,0 +1,40 @@
+<h1>Add new bill</h1>
+
+
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+
+<h3>Basic Buttons</h3>
+<div class="example-button-row">
+    <button mat-button>Basic</button>
+    <button mat-button color="primary">Primary</button>
+    <button mat-button color="accent">Accent</button>
+    <button mat-button color="warn">Warn</button>
+    <button mat-button disabled>Disabled</button>
+    <a mat-button routerLink=".">Link</a>
+</div>
+
+<mat-card>
+    <mat-card-content>Simple card</mat-card-content>
+</mat-card>
+
+<mat-card>
+<!--    <mat-spinner diameter="150" *ngIf="loading"></mat-spinner>-->
+
+<!--    <form (submit)="onSavePost(postForm)" #postForm="ngForm" *ngIf="!loading">-->
+    <form (submit)="onSavePost(postForm)" #postForm="ngForm">
+        <mat-card-content>
+
+            <mat-form-field appearance="fill">
+                <input matInput [matDatepicker]="picker">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <button
+                mat-raised-button
+                color="primary"
+                type="submit"
+            > Save bill </button>
+        </mat-card-content>
+    </form>
+</mat-card>

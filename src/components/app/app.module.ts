@@ -24,12 +24,14 @@ import { AppComponent } from './app.component'
 import { BillsComponent } from 'src/components/bills/bills.component'
 import { BillsListComponent } from 'src/components/bills/list/bills.list.component'
 import { HeaderComponent } from 'src/components/header/header.component'
+import { HomepageComponent } from 'src/components/app/homepage/homepage.component'
 
 
 
 @NgModule({
     declarations: [
         AppComponent,
+        HomepageComponent,
         HeaderComponent,
         BillsComponent,
         BillsListComponent
